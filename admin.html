@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Admin | Khabonina's Marquees Hire</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body class="admin-body">
+    <header class="admin-header">
+      <a href="index.html"
+        ><img src="assets/logo.svg" alt="Khabonina's Marquees Hire"
+      /></a>
+      <div>
+        <span class="admin-pill">ADMIN PROTOTYPE</span
+        ><a href="index.html">View customer site ↗</a>
+      </div>
+    </header>
+    <main class="admin-layout">
+      <aside class="sidebar">
+        <p class="eyebrow">WORKSPACE</p>
+        <a class="side-link active" href="#dashboard">Dashboard</a
+        ><a class="side-link" href="#products">Products</a
+        ><a class="side-link" href="#requests">Hire requests</a
+        ><a class="side-link" href="#customers">Customers</a>
+        <div class="sidebar-note">
+          <b>Prototype note</b>
+          <p>
+            This admin uses demo data in your browser. Production access needs
+            PHP authentication and a MySQL database.
+          </p>
+        </div>
+      </aside>
+      <div class="admin-content">
+        <section id="dashboard">
+          <p class="eyebrow">OVERVIEW</p>
+          <h1>Good day, Admin</h1>
+          <p class="muted">
+            Manage your hire catalogue and keep track of incoming requests.
+          </p>
+          <div class="stat-grid">
+            <div class="stat">
+              <span>Active products</span><strong id="statProducts">4</strong
+              ><small>Demo catalogue</small>
+            </div>
+            <div class="stat">
+              <span>Pending requests</span><strong id="statRequests">2</strong
+              ><small>Sample data</small>
+            </div>
+            <div class="stat">
+              <span>Categories</span><strong>4</strong
+              ><small>Marquees, chairs, tables, accessories</small>
+            </div>
+          </div>
+        </section>
+        <section class="admin-panel" id="analytics">
+          <div class="panel-head">
+            <div>
+              <p class="eyebrow">STORE PERFORMANCE</p>
+              <h2>Sales overview</h2>
+            </div>
+            <div class="analytics-controls">
+              <label for="salesPeriod">View</label
+              ><select id="salesPeriod">
+                <option value="day">Past 7 days</option>
+                <option value="month" selected>Past 12 months</option>
+                <option value="year">Past 5 years</option>
+              </select>
+            </div>
+          </div>
+          <div class="analytics-summary">
+            <div>
+              <span>Total sales</span><strong id="salesTotal">R0</strong>
+            </div>
+            <div><span>Orders</span><strong id="salesOrders">0</strong></div>
+            <div>
+              <span>Average order</span><strong id="salesAverage">R0</strong>
+            </div>
+          </div>
+          <svg
+            class="analytics-chart"
+            id="salesChart"
+            viewBox="0 0 760 220"
+            role="img"
+            aria-label="Line chart showing sales over time"
+          ></svg>
+          <p class="chart-note">
+            Sample sales figures for layout demonstration only. Connect
+            completed paid orders to show real revenue.
+          </p>
+        </section>
+        <section class="admin-panel" id="products">
+          <div class="panel-head">
+            <div>
+              <p class="eyebrow">INVENTORY</p>
+              <h2>Product management</h2>
+            </div>
+            <button class="button small" id="addProductBtn">
+              + Add product
+            </button>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Product</th>
+                  <th>Category</th>
+                  <th>Hire rate (demo)</th>
+                  <th>Qty</th>
+                  <th>Status</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody id="productRows"></tbody>
+            </table>
+          </div>
+          <form id="productForm" class="product-form hidden">
+            <h3 id="productFormTitle">Add product</h3>
+            <div class="form-grid">
+              <label>Product name<input name="name" required /></label
+              ><label
+                >Category<select name="category">
+                  <option>Marquees</option>
+                  <option>Gazebos</option>
+                  <option>Chairs</option>
+                  <option>Tables</option>
+                  <option>Accessories</option>
+                </select></label
+              ><label
+                >Hire rate (R)<input
+                  name="price"
+                  type="number"
+                  min="0"
+                  step="0.01"
+                  required /></label
+              ><label
+                >Quantity owned<input
+                  name="quantity"
+                  type="number"
+                  min="0"
+                  step="1"
+                  required
+              /></label>
+            </div>
+            <div class="form-actions">
+              <button class="button small" type="submit">Save product</button
+              ><button
+                class="button small secondary"
+                type="button"
+                id="cancelProductBtn"
+              >
+                Cancel
+              </button>
+            </div>
+          </form>
+        </section>
+        <section class="admin-panel" id="requests">
+          <div class="panel-head">
+            <div>
+              <p class="eyebrow">BOOKINGS</p>
+              <h2>Hire requests</h2>
+            </div>
+            <span class="status pending">Needs review</span>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Reference</th>
+                  <th>Customer</th>
+                  <th>Hire date</th>
+                  <th>Items</th>
+                  <th>Status</th>
+                  <th>Update</th>
+                </tr>
+              </thead>
+              <tbody id="requestRows"></tbody>
+            </table>
+          </div>
+        </section>
+        <section class="admin-panel" id="customers">
+          <p class="eyebrow">CUSTOMER RECORDS</p>
+          <h2>Customers</h2>
+          <p class="muted">
+            In the completed PHP/MySQL application, this section will list
+            registered customers and their associated hire requests. The
+            prototype does not store real customer accounts.
+          </p>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <img src="assets/logo.svg" alt="" />
+      <p>Admin interface prototype · Demo data only</p>
+      <a href="index.html">Customer website</a>
+    </footer>
+    <script src="js/admin.js"></script>
+  </body>
+</html>
