@@ -1,0 +1,369 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Khabonina's Marquees Hire | Hire for your occasion</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body class="customer-page">
+    <header class="topbar">
+      <button
+        id="menuToggle"
+        class="menu-button"
+        aria-controls="mainNav"
+        aria-expanded="false"
+      >
+         <span>Menu</span>
+      </button>
+      <a href="index.html" class="wordmark"
+        >KHABONINA'S <small>MARQUEES HIRE</small></a
+      >
+      <a class="header-cart" href="#cart"
+        >Your request (<span id="cartCount">0</span>)</a
+      >
+    </header>
+    <div id="menuShade" class="menu-shade" hidden></div>
+    <nav class="left-menu" id="mainNav" aria-label="Main navigation">
+      <div class="menu-heading">
+        Explore <button id="closeMenu" aria-label="Close menu">×</button>
+      </div>
+      <a href="#home">Home</a><a href="#equipment">Hire equipment</a
+      ><a href="#inspection">Site inspection</a
+      ><a href="#cart">My hire request</a><a href="#how">How it works</a
+      ><a href="#contact">Contact</a><a href="admin.html">Admin demo</a>
+    </nav>
+    <main id="home">
+      <section class="hero-new">
+        <div class="hero-words">
+          <span class="overline">DURBAN & SURROUNDING AREAS</span>
+          <h1>Making room for<br />every occasion.</h1>
+          <p>
+            Marquees, gazebos, seating and tables for gatherings big and small.
+            Tell us what you're planning and we'll help with the setup.
+          </p>
+          <a href="#equipment" class="button">View hire collection</a
+          ><a class="text-link" href="#inspection">Arrange a site inspection</a>
+        </div>
+        <div class="hero-picture">
+          <div class="picture-top">KHABONINA'S EVENT HIRE</div>
+          <img src="assets/tent.svg" alt="Illustration of a marquee tent" />
+          <div class="picture-bottom">
+            Outdoor events · Family functions · Celebrations
+          </div>
+        </div>
+      </section>
+      <section class="intro-strip">
+        <span>Marquees in different sizes</span
+        ><span>Gazebos & outdoor cover</span
+        ><span>Delivery and setup enquiries</span>
+      </section>
+      <section class="section" id="equipment">
+        <div class="section-heading">
+          <div>
+            <span class="overline">THE COLLECTION</span>
+            <h2>Choose what you need</h2>
+            <p>
+              Browse our example hire range. Sizes and availability are
+              confirmed when we prepare your quote.
+            </p>
+          </div>
+          <input
+            id="searchInput"
+            class="search"
+            placeholder="Search the collection"
+            aria-label="Search equipment"
+          />
+        </div>
+        <div class="filters" id="filters">
+          <button class="filter active" data-category="All">All</button
+          ><button class="filter" data-category="Marquees">Marquees</button
+          ><button class="filter" data-category="Gazebos">Gazebos</button
+          ><button class="filter" data-category="Chairs">Chairs</button
+          ><button class="filter" data-category="Tables">Tables</button
+          ><button class="filter" data-category="Accessories">
+            Accessories
+          </button>
+        </div>
+        <div class="product-grid" id="productGrid">
+          <article
+            class="product-card"
+            data-name="Small marquee 3m x 6m"
+            data-category="Marquees"
+          >
+            <div class="product-image">
+              <img src="assets/tent.svg" alt="Small marquee illustration" />
+            </div>
+            <div class="product-info">
+              <span class="tag">MARQUEES</span>
+              <h3>Small marquee</h3>
+              <p>3m × 6m · A compact option for smaller gatherings.</p>
+              <div class="product-bottom">
+                <span>Quote on request</span
+                ><button
+                  class="button small add-cart"
+                  data-id="tent-small"
+                  data-name="Small marquee (3m x 6m)"
+                  data-price="0"
+                >
+                  Add
+                </button>
+              </div>
+            </div>
+          </article>
+          <article
+            class="product-card"
+            data-name="Medium marquee 6m x 9m"
+            data-category="Marquees"
+          >
+            <div class="product-image">
+              <img src="assets/tent.svg" alt="Medium marquee illustration" />
+            </div>
+            <div class="product-info">
+              <span class="tag">MARQUEES</span>
+              <h3>Medium marquee</h3>
+              <p>6m × 9m · Extra covered space for guests.</p>
+              <div class="product-bottom">
+                <span>Quote on request</span
+                ><button
+                  class="button small add-cart"
+                  data-id="tent-medium"
+                  data-name="Medium marquee (6m x 9m)"
+                  data-price="0"
+                >
+                  Add
+                </button>
+              </div>
+            </div>
+          </article>
+          <article
+            class="product-card"
+            data-name="Large marquee 9m x 12m"
+            data-category="Marquees"
+          >
+            <div class="product-image">
+              <img src="assets/tent.svg" alt="Large marquee illustration" />
+            </div>
+            <div class="product-info">
+              <span class="tag">MARQUEES</span>
+              <h3>Large marquee</h3>
+              <p>9m × 12m · For larger events and functions.</p>
+              <div class="product-bottom">
+                <span>Quote on request</span
+                ><button
+                  class="button small add-cart"
+                  data-id="tent-large"
+                  data-name="Large marquee (9m x 12m)"
+                  data-price="0"
+                >
+                  Add
+                </button>
+              </div>
+            </div>
+          </article>
+          <article
+            class="product-card"
+            data-name="Gazebo 3m x 3m"
+            data-category="Gazebos"
+          >
+            <div class="product-image">
+              <img src="assets/tent.svg" alt="Gazebo illustration" />
+            </div>
+            <div class="product-info">
+              <span class="tag">GAZEBOS</span>
+              <h3>Gazebo</h3>
+              <p>3m × 3m · Handy for stalls, shade or smaller setups.</p>
+              <div class="product-bottom">
+                <span>Quote on request</span
+                ><button
+                  class="button small add-cart"
+                  data-id="gazebo"
+                  data-name="Gazebo (3m x 3m)"
+                  data-price="0"
+                >
+                  Add
+                </button>
+              </div>
+            </div>
+          </article>
+          <article
+            class="product-card"
+            data-name="White chairs"
+            data-category="Chairs"
+          >
+            <div class="product-image">
+              <img src="assets/chairs.svg" alt="White chairs" />
+            </div>
+            <div class="product-info">
+              <span class="tag">SEATING</span>
+              <h3>White chairs</h3>
+              <p>Simple seating for ceremonies and functions.</p>
+              <div class="product-bottom">
+                <span>Quote on request</span
+                ><button
+                  class="button small add-cart"
+                  data-id="chairs"
+                  data-name="White chairs"
+                  data-price="0"
+                >
+                  Add
+                </button>
+              </div>
+            </div>
+          </article>
+          <article
+            class="product-card"
+            data-name="Event tables"
+            data-category="Tables"
+          >
+            <div class="product-image">
+              <img src="assets/tables.svg" alt="Event tables" />
+            </div>
+            <div class="product-info">
+              <span class="tag">TABLES</span>
+              <h3>Event tables</h3>
+              <p>For seating, catering or event displays.</p>
+              <div class="product-bottom">
+                <span>Quote on request</span
+                ><button
+                  class="button small add-cart"
+                  data-id="tables"
+                  data-name="Event tables"
+                  data-price="0"
+                >
+                  Add
+                </button>
+              </div>
+            </div>
+          </article>
+          <article
+            class="product-card"
+            data-name="Tablecloths and accessories"
+            data-category="Accessories"
+          >
+            <div class="product-image">
+              <img src="assets/accessories.svg" alt="Event accessories" />
+            </div>
+            <div class="product-info">
+              <span class="tag">EXTRAS</span>
+              <h3>Accessories</h3>
+              <p>Tablecloths and finishing touches for your setup.</p>
+              <div class="product-bottom">
+                <span>Quote on request</span
+                ><button
+                  class="button small add-cart"
+                  data-id="extras"
+                  data-name="Event accessories"
+                  data-price="0"
+                >
+                  Add
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+        <p class="small-note">
+          Sizes are illustrative examples, not verified stock. Confirm actual
+          sizes, photos and prices with the business before publishing.
+        </p>
+      </section>
+      <section id="inspection" class="inspection-section">
+        <div>
+          <span class="overline">BEFORE THE BIG DAY</span>
+          <h2>Would you like us to see the venue first?</h2>
+          <p>
+            We can arrange a site inspection to check access, ground conditions
+            and available space before installation.
+          </p>
+          <p class="inspection-hint">
+            Inspection fee depends on travel distance. We will confirm the fee
+            with you before scheduling.
+          </p>
+        </div>
+        <label class="inspection-check"
+          ><input type="checkbox" id="inspectionWanted" /> Yes, include a site
+          inspection in my enquiry</label
+        >
+      </section>
+      <section class="section cart-section" id="cart">
+        <div>
+          <span class="overline">YOUR ENQUIRY</span>
+          <h2>Build your hire request</h2>
+          <p>
+            Send us the items, dates and location. We'll check availability and
+            get back to you with a quote.
+          </p>
+        </div>
+        <div class="cart-panel">
+          <div id="cartItems"></div>
+          <p class="small-note">
+            Prices will be confirmed in your quotation. This is not an online
+            payment.
+          </p>
+          <form id="requestForm" class="request-form">
+            <div class="form-grid">
+              <label>Full name<input name="name" required /></label
+              ><label
+                >Email address<input
+                  type="email"
+                  name="email"
+                  required /></label
+              ><label>Contact number<input name="phone" required /></label
+              ><label
+                >Venue / suburb<input
+                  name="location"
+                  required
+                  placeholder="Where is your event?" /></label
+              ><label
+                >Event date<input type="date" name="hireDate" required /></label
+              ><label
+                >Return date<input type="date" name="returnDate" required
+              /></label>
+            </div>
+            <label
+              >Anything else we should know?<textarea
+                name="notes"
+                rows="4"
+                placeholder="Event type, access, setup or other details"
+              ></textarea></label
+            ><button class="button" type="submit">Prepare enquiry</button>
+            <p id="formMessage" role="status" class="form-message"></p>
+          </form>
+        </div>
+      </section>
+      <section class="section how-section" id="how">
+        <span class="overline">OUR PROCESS</span>
+        <h2>How hiring works</h2>
+        <div class="steps">
+          <div>
+            <b>01</b>
+            <h3>Choose equipment</h3>
+            <p>Select the items and sizes you need.</p>
+          </div>
+          <div>
+            <b>02</b>
+            <h3>Share your venue</h3>
+            <p>Tell us where and when your event is happening.</p>
+          </div>
+          <div>
+            <b>03</b>
+            <h3>Get a quotation</h3>
+            <p>We confirm availability, transport and any inspection fee.</p>
+          </div>
+        </div>
+      </section>
+      <section class="contact-band" id="contact">
+        <span class="overline">GET IN TOUCH</span>
+        <h2>Planning something special?</h2>
+        <p>Use the enquiry form above to put together your request.</p>
+        <a href="#cart" class="button">Start an enquiry</a>
+      </section>
+    </main>
+    <footer>
+      <span>Khabonina's Marquees Hire</span
+      ><small>© <span id="year"></span> · Demonstration website</small
+      ><a href="admin.html">Admin demo</a>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>
